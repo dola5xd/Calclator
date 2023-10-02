@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calclator</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="logo theme-3">
+            <h1>calc</h1>
+            <div class="toggle" id="Toggle">
+                <label for="Toggle" class="l1">Theme</label>
+                <div class="toogle-btns">
+                    <input type="checkbox" name="theme-1" id="t1" class="button">
+                    <input type="checkbox" name="theme-2" id="t2" class="button">
+                    <input type="checkbox" name="theme-3" id="t3" class="button">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="continer theme-3">
+            <div class="calc theme-3">
+                <input type="text" class="input theme-3" value="" disabled>
+                <div class="btns">
+                    <div class="btns-row">
+                        <button class="calc-btn theme-3" value="7">7</button>
+                        <button class="calc-btn theme-3" value="8">8</button>
+                        <button class="calc-btn theme-3" value="9">9</button>
+                        <button class="calc-btn theme-3 del">DEL</button>
+                    </div>
+                    <div class="btns-row">
+                        <button class="calc-btn theme-3" value="4">4</button>
+                        <button class="calc-btn theme-3" value="5">5</button>
+                        <button class="calc-btn theme-3" value="6">6</button>
+                        <button class="calc-btn theme-3 add" value="+">+</button>
+                    </div>
+                    <div class="btns-row">
+                        <button class="calc-btn theme-3" value="1">1</button>
+                        <button class="calc-btn theme-3" value="2">2</button>
+                        <button class="calc-btn theme-3" value="3">3</button>
+                        <button class="calc-btn theme-3 minus" value="-">-</button>
+                    </div>
+                    <div class="btns-row">
+                        <button class="calc-btn theme-3" value=".">.</button>
+                        <button class="calc-btn theme-3" value="0">0</button>
+                        <button class="calc-btn theme-3 divided" value="/">/</button>
+                        <button class="calc-btn theme-3 multi" value="*">&times;</button>
+                    </div>
+                    <div class="btns-row">
+                        <button class="calc-btn theme-3 reset">Reset</button>
+                        <button class="calc-btn theme-3 equal" value="=">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+
+</html>

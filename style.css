@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg: hsl(222, 26%, 31%);
+  --white: hsl(0, 0%, 100%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --toggle-btn: hsl(6, 63%, 50%);
+  --hover: hsl(6.79deg 92.98% 66.47%);
+  --label-bg: hsl(224, 36%, 15%);
+  --btns-bg: hsl(224.52deg 29.52% 20.59%);
+  --btns-font-color: hsl(221, 14%, 31%);
+  --btns-shadow: hsl(28, 16%, 65%);
+  --Sbtn-bg: hsl(225, 21%, 49%);
+  --Sbtn-shadow: hsl(224.08deg 27.37% 35.1%);
+  --Sbtn-hover: hsl(223.13deg 51.61% 75.69%);
+  --equal-shadow: hsl(6, 70%, 34%);
+  --btn-bg: hsl(48deg 8.77% 88.82%);
+  --input-txt: hsl(0, 0%, 100%);
+  --bg-hover: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: "League Spartan", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+body {
+  background-color: var(--bg);
+  width: 100%;
+  min-height: calc(100vh - 60px - 40px);
+  position: relative;
+}
+
+.theme-info span {
+  color: aliceblue;
+  font-size: 3em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.theme-info p {
+  text-align: center;
+  font-size: 2em;
+  transition: 0.1s;
+}
+.logo {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  color: var(--input-txt);
+}
+.toggle {
+  display: flex;
+  align-items: center;
+}
+.toggle .l1 {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.toogle-btns {
+  display: flex;
+  justify-content: center;
+  background-color: var(--toggle-bg);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+.toogle-btns input {
+  height: 20px;
+  width: 20px;
+  appearance: none;
+  background-color: var(--toggle-btn);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.5s;
+  margin-right: 5px;
+}
+.toogle-btns input:hover {
+  cursor: pointer;
+  background-color: var(--hover);
+}
+#t1 {
+  opacity: 1;
+}
+.continer {
+  width: 100%;
+  height: calc(100vh - 60px - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#one {
+  opacity: 1;
+}
+.continer .calc input {
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+  background-color: var(--label-bg);
+  color: var(--input-txt);
+  font-size: 32px;
+  font-weight: 700;
+  border: 0;
+  width: -webkit-fill-available;
+  outline: 0;
+}
+.continer .calc .btns {
+  background-color: var(--btns-bg);
+  padding: 10px;
+  border-radius: 10px;
+}
+.continer .calc .btns .btns-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.continer .calc .btns button {
+  text-align: center;
+  height: 80px;
+  width: 90px;
+  background-color: var(--btn-bg);
+  border: none;
+  margin: 8px;
+  border-radius: 5px;
+  color: var(--btns-font-color);
+  font-size: 32px;
+  font-weight: 700;
+  box-shadow: 0px 4px 0px 0px var(--btns-shadow);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.continer .calc .btns .del {
+  background-color: var(--Sbtn-bg);
+  box-shadow: 0px 4px 0px 0px var(--Sbtn-shadow);
+  color: var(--white);
+}
+.continer .calc .btns .reset {
+  width: 50%;
+  background-color: var(--Sbtn-bg);
+  box-shadow: 0px 4px 0px 0px var(--Sbtn-shadow);
+  color: var(--white);
+}
+.continer .calc .btns .equal {
+  width: 50%;
+  color: var(--white);
+  background-color: var(--toggle-btn);
+  box-shadow: 0px 4px 0px 0px var(--equal-shadow);
+}
+.continer .calc .btns .equal:hover {
+  background-color: var(--hover);
+}
+.continer .calc .btns .reset:hover,
+.continer .calc .btns .del:hover {
+  background-color: var(--Sbtn-hover);
+}
+.continer .calc .btns button:hover {
+  background-color: var(--bg-hover);
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo h1 {
+    margin-bottom: 20px;
+  }
+  .continer {
+    height: calc(100vh - 60px - 40px - 40px);
+  }
+  .continer .calc {
+    margin: 5px;
+  }
+  .continer .calc input {
+    width: 300px;
+  }
+  .continer .calc .btns {
+    width: 300px;
+  }
+  .continer .calc .btns button {
+    height: 50px;
+    width: 60px;
+    font-size: 25px;
+  }
+  .continer .calc .btns .btns-row {
+    justify-content: center;
+  }
+}
