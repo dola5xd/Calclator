@@ -230,7 +230,7 @@ arr.forEach((element, index) => {
         return item != element;
       })
       .forEach((item) => {
-        item.style.opacity = "0";
+        item.style.opacity = "0.5";
         item.style.backgroundColor = "var(--toggle-btn)";
       });
   });

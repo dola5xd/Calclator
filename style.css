@@ -82,7 +82,7 @@ body {
   appearance: none;
   background-color: var(--toggle-btn);
   border-radius: 50%;
-  opacity: 0;
+  opacity: 0.5;
   transition: 0.5s;
   margin-right: 5px;
 }
